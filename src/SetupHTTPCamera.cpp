@@ -6,6 +6,10 @@ long freeHeap = 0;
 long freePSRAM = 0;
 int RSSI = 0;
 
+// IPAddress local_IP(192,168,1,184);
+// IPAddress gateway(192,168,1,1);
+// IPAddress subnet(255,255,255,0);
+
 void InitialMemoryCheck()
 {
   freeHeap = ESP.getFreeHeap();
@@ -57,6 +61,11 @@ void SetupCamera()
 
 void SetupWiFi()
 {
+    // EP32 will always use the same IP on your local network
+    // if (!WiFi.config(local_IP, gateway, subnet)) {
+    //   Serial.println("STA Failed to configure");
+    // }
+  
     WiFi.begin(SSID, PASSWORD);
     WiFi.setSleep(false);
   

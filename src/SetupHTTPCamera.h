@@ -13,6 +13,11 @@ extern long freeHeap;
 extern long freePSRAM;
 extern int RSSI;
 
+extern IPAddress localIP;
+extern IPAddress gateway;
+extern IPAddress subnet;
+
+
 void InitialMemoryCheck();
 void handleCapture();
 void SetupCamera();
