@@ -8,6 +8,8 @@
 #define NUM_LEDS    16 
 
 void SetupLEDPin();
-void TurnAllColorLED();
+void TurnONAllColorLED1By1();
+void TurnONAllColorLED();
+void TurnONAllColorLED1By1()
 
 #endif

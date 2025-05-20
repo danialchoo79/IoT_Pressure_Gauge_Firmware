@@ -1,4 +1,6 @@
-#include "SetupHTTPCamera.h"
+#include "HTTPCamHotSpotBlocking.h"
+
+// This is based on a one to one communication using Hot Spot over HTTP
 
 WebServer server(80);  // Port 80 (default HTTP)
 
@@ -6,9 +8,11 @@ long freeHeap = 0;
 long freePSRAM = 0;
 int RSSI = 0;
 
+/* ---------TO USE SPECIFIC IP---------*/
 // IPAddress local_IP(192,168,1,184);
 // IPAddress gateway(192,168,1,1);
 // IPAddress subnet(255,255,255,0);
+/* ---------TO USE SPECIFIC IP---------*/
 
 void InitialMemoryCheck()
 {
@@ -61,10 +65,12 @@ void SetupCamera()
 
 void SetupWiFi()
 {
+    /* ---------TO USE SPECIFIC IP---------*/
     // EP32 will always use the same IP on your local network
     // if (!WiFi.config(local_IP, gateway, subnet)) {
     //   Serial.println("STA Failed to configure");
     // }
+    /* ---------TO USE SPECIFIC IP---------*/
   
     WiFi.begin(SSID, PASSWORD);
     WiFi.setSleep(false);
