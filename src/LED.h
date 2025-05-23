@@ -4,12 +4,16 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN     3
+#define LED_PIN     25
 #define NUM_LEDS    16 
 
 void SetupLEDPin();
 void TurnONAllColorLED1By1();
 void TurnONAllColorLED();
-void TurnONAllColorLED1By1()
+void TurnOFFAllColorLED1By1();
+void TurnOFFAllColorLED();
+
+// Test
+void LEDDataTest();
 
 #endif

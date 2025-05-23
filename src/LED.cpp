@@ -45,3 +45,9 @@ void TurnOFFAllColorLED()
     }
     ring.show();
 }
+
+void LEDDataTest()
+{
+    pinMode(LED_PIN,OUTPUT);
+    digitalWrite(LED_PIN,HIGH);
+}

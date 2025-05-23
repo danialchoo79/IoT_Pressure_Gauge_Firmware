@@ -1,12 +1,12 @@
-#include "HTTPCamHotSpotBlocking.h"
+#include "HTTPCamBlocking.h"
 
 // This is based on a one to one communication using Hot Spot over HTTP
 
-WebServer server(80);  // Port 80 (default HTTP)
+WebServer serverBlocking(80);  // Port 80 (default HTTP)
 
-long freeHeap = 0;
-long freePSRAM = 0;
-int RSSI = 0;
+long freeHeapBlocking = 0;
+long freePSRAMBlocking = 0;
+int RSSIBlocking = 0;
 
 /* ---------TO USE SPECIFIC IP---------*/
 // IPAddress local_IP(192,168,1,184);
@@ -14,38 +14,49 @@ int RSSI = 0;
 // IPAddress subnet(255,255,255,0);
 /* ---------TO USE SPECIFIC IP---------*/
 
-void InitialMemoryCheck()
+void InitialMemoryCheckBlocking()
 {
-  freeHeap = ESP.getFreeHeap();
-  freePSRAM = ESP.getFreePsram();
+  freeHeapBlocking = ESP.getFreeHeap();
+  freePSRAMBlocking = ESP.getFreePsram();
 
   Serial.print("Free heap memory (Before Photo): ");
-  Serial.println(freeHeap);
+  Serial.println(freeHeapBlocking);
   Serial.print("Free PSRAM (Before Photo): ");
-  Serial.println(freePSRAM);
+  Serial.println(freePSRAMBlocking);
 }
 
-void handleCapture()
+void MemoryCheckBlocking()
 {
-  Serial.begin(115200);
+  freeHeapBlocking = ESP.getFreeHeap();
+  freePSRAMBlocking = ESP.getFreePsram();
+
+  Serial.print("Free heap memory (After Photo): ");
+  Serial.println(freeHeapBlocking);
+  Serial.print("Free PSRAM (After Photo): ");
+  Serial.println(freePSRAMBlocking);
+
   Serial.println();
-  InitialMemoryCheck();
+}
+
+void handleCaptureBlocking()
+{
+  InitialMemoryCheckBlocking();
 
     if (PoECAM.Camera.get()) {
         Serial.println("Capture succeeded, sending image...");
 
         // Set HTTP content headers
-        server.sendHeader("Content-Type", "image/jpeg");
-        server.sendHeader("Content-Disposition", "inline; filename=capture.jpg");
-        server.send_P(200, "image/jpeg", (const char *)PoECAM.Camera.fb->buf, PoECAM.Camera.fb->len); // P is PROGMEM; Sends Data from RAM
+        serverBlocking.sendHeader("Content-Type", "image/jpeg");
+        serverBlocking.sendHeader("Content-Disposition", "inline; filename=capture.jpg");
+        serverBlocking.send_P(200, "image/jpeg", (const char *)PoECAM.Camera.fb->buf, PoECAM.Camera.fb->len); // P is PROGMEM; Sends Data from RAM
         PoECAM.Camera.free();
       } else {
         Serial.println("Capture failed!");
-        server.send(500, "text/plain", "Camera capture failed");
+        serverBlocking.send(500, "text/plain", "Camera capture failed");
       }
 }
 
-void SetupCamera()
+void SetupCameraBlocking()
 {
     PoECAM.begin();
     delay(1000);
@@ -63,7 +74,7 @@ void SetupCamera()
     PoECAM.Camera.sensor->set_hmirror(PoECAM.Camera.sensor, 0);
 }
 
-void SetupWiFi()
+void SetupWiFiBlocking()
 {
     /* ---------TO USE SPECIFIC IP---------*/
     // EP32 will always use the same IP on your local network
@@ -85,37 +96,33 @@ void SetupWiFi()
     Serial.print("Connected! IP: ");
     Serial.println(WiFi.localIP()); 
 
-    RSSI = WiFi.RSSI();
+    RSSIBlocking = WiFi.RSSI();
 
     Serial.println();
     Serial.print("Signal strength (RSSI): ");
-    Serial.print(RSSI);
+    Serial.print(RSSIBlocking);
     Serial.println();
 }
 
-void PostImageOnServer()
+void PostImageOnServerBlocking()
 {
     // Route: /jpg returns a captured image
-    server.on("/jpg", HTTP_GET, handleCapture);
+    serverBlocking.on("/jpg", HTTP_GET, handleCaptureBlocking);
 
     // Route: default root page with instructions
-    server.on("/", HTTP_GET, []() {
-        server.send(200, "text/html", "<html><body><h1>PoECAM</h1><p><a href=\"/jpg\">View Image</a></p></body></html>");
+    serverBlocking.on("/", HTTP_GET, []() {
+        serverBlocking.send(200, "text/html", "<html><body><h1>PoECAM</h1><p><a href=\"/jpg\">View Image</a></p></body></html>");
     });
 
-    server.begin();
+    serverBlocking.begin();
     Serial.println("Web server started");
 }
 
-void MemoryCheck()
+void ImageCaptureHTTPBlocking()
 {
-  freeHeap = ESP.getFreeHeap();
-  freePSRAM = ESP.getFreePsram();
-
-  Serial.print("Free heap memory (After Photo): ");
-  Serial.println(freeHeap);
-  Serial.print("Free PSRAM (After Photo): ");
-  Serial.println(freePSRAM);
-
-  Serial.println();
+  handleCaptureBlocking();
+  SetupCameraBlocking();
+  SetupWiFiBlocking();
+  PostImageOnServerBlocking();
+  MemoryCheckBlocking();
 }

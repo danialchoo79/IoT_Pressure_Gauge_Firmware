@@ -8,22 +8,21 @@
 #define SSID      "Danials Iphone"
 #define PASSWORD  "Danial1997."
 
-extern WebServer server;
-extern long freeHeap;
-extern long freePSRAM;
-extern int RSSI;
+extern WebServer serverBlocking;
+extern long freeHeapBlocking;
+extern long freePSRAMBlocking;
+extern int RSSIBlocking;
 
-extern IPAddress localIP;
-extern IPAddress gateway;
-extern IPAddress subnet;
+extern IPAddress localIPBlocking;
+extern IPAddress gatewayBlocking;
+extern IPAddress subnetBlocking;
 
-
-void InitialMemoryCheck();
-void handleCapture();
-void SetupCamera();
-void SetupWiFi();
-void PostImageOnServer();
-void MemoryCheck();
-
+void InitialMemoryCheckBlocking();
+void handleCaptureBlocking();
+void SetupCameraBlocking();
+void SetupWiFiBlocking();
+void PostImageOnServerBlocking();
+void MemoryCheckBlocking();
+void ImageCaptureHTTPBlocking();
 
 #endif
