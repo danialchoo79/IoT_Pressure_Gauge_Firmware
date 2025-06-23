@@ -31,10 +31,9 @@ void TurnOFFAllColorLED1By1()
 {
     // Turn Off LEDs one by one using RGB Value of 0,0,0
     for (int i = 0; i < NUM_LEDS; i++) {
-        ring.setPixelColor(i, ring.Color(255, 255, 255)); // White
-        ring.show();
-        delay(1000);
+        ring.setPixelColor(i, ring.Color(0, 0, 0)); // White
     }
+    ring.show();
 }
 
 void TurnOFFAllColorLED()

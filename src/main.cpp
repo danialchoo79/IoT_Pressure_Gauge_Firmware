@@ -10,12 +10,15 @@ void setup() {
   SetupWiFi();            // Setup Routes and Starts Server
   SetupCamera();          // Initialise Camera
 
-  ReserveMemoryForSerial(64);
+  // ReserveMemoryForSerial(64);
+
+  TurnONAllColorLED();
+  PostImageOnServer();
+  // delay(1000);
+  // TurnOFFAllColorLED();
 }
 
 void loop() {
-  // server.handleClient();
-  // TurnAllColorLED1By1();
-  
-  ServiceSerialCommand();
+
+  // ServiceSerialCommand();
 }
