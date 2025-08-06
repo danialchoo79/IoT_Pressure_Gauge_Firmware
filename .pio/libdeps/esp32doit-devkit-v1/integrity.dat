@@ -1,0 +1,11 @@
+ArduinoJson
+painlessmesh/painlessMesh@^1.5.4
+TaskScheduler
+esphome/ESPAsyncWebServer-esphome@^3.3.0
+marvinroger/AsyncMqttClient@^0.9.0
+https://github.com/m5stack/M5PoECAM.git
+arduino-libraries/ArduinoHttpClient@^0.6.1
+marian-craciunescu/ESP32Ping@^1.7
+knolleary/PubSubClient@^2.8
+AsyncTCP
+adafruit/Adafruit NeoPixel@^1.13.0
