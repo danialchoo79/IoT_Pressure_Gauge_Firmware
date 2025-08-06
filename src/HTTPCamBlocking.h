@@ -5,8 +5,8 @@
 #include <WiFi.h>
 #include <WebServer.h>  // ESP32 Web Server
 
-#define SSID      "Danials Iphone"
-#define PASSWORD  "Danial1997."
+#define SSIDCAM      "Danials Iphone"
+#define PASSWORDCAM  "Danial1997."
 
 extern WebServer serverBlocking;
 extern long freeHeapBlocking;

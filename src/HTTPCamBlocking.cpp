@@ -83,7 +83,7 @@ void SetupWiFiBlocking()
     // }
     /* ---------TO USE SPECIFIC IP---------*/
   
-    WiFi.begin(SSID, PASSWORD);
+    WiFi.begin(SSIDCAM, PASSWORDCAM);
     WiFi.setSleep(false);
   
     Serial.print("Connecting to WiFi");

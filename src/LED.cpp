@@ -5,7 +5,8 @@ Adafruit_NeoPixel ring(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 void SetupLEDPin()
 {
     ring.begin();       // Initialize the ring
-    ring.show();        // Turn off all LEDs
+    ring.setBrightness(BRIGHTNESS);
+    // ring.show();
 }
 
 void TurnONAllColorLED1By1()

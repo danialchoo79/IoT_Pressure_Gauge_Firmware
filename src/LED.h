@@ -5,7 +5,8 @@
 #include <Adafruit_NeoPixel.h>
 
 #define LED_PIN     25
-#define NUM_LEDS    16 
+#define NUM_LEDS    16
+#define BRIGHTNESS  130
 
 void SetupLEDPin();
 void TurnONAllColorLED1By1();
