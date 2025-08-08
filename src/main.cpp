@@ -57,11 +57,12 @@
 
 #define DEVICE         "cam1"
 
-#define STATUS_TOPIC "system/status/" DEVICE
-
 #define MQTT_HOST      IPAddress(128, 53, 209, 104)  // Broker IP
 #define MQTT_PORT      1883
+
+// Topics
 #define MQTT_TOPIC     "cameras/" DEVICE "/image"
+#define STATUS_TOPIC   "system/status/" DEVICE
 
 const char* HEARTBEAT_TOPIC = "system/heartbeat/" DEVICE;
 
