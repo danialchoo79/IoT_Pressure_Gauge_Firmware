@@ -63,6 +63,7 @@
 // Topics
 #define MQTT_TOPIC     "cameras/" DEVICE "/image"
 #define STATUS_TOPIC   "system/status/" DEVICE
+#define CMD_TOPIC      "cameras/" DEVICE "/cmd"
 
 const char* HEARTBEAT_TOPIC = "system/heartbeat/" DEVICE;
 
