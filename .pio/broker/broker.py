@@ -9,9 +9,11 @@ import time
 # MQTT Configuration
 MQTT_BROKER = "128.53.209.104"
 MQTT_PORT = 1883
-MQTT_TOPIC = "cameras/+/image"
+
+CAMERA_TOPIC = "cameras/+/image"
 HEARTBEAT_TOPIC = "system/heartbeat"
 CLIENT_ID = "raspi_receiver"
+LWT_TOPIC = f"system/status/{CLIENT_ID}"
 
 # Base Directory to Saved Images
 SAVE_DIR = "received_images"
@@ -40,7 +42,7 @@ logging.getLogger().addHandler(console)
 
 # MQTT Client
 client = mqtt.Client(client_id=CLIENT_ID)
-client.will_set("system/status", payload="raspi disconnected", qos=1, retain=True)
+client.will_set(LWT_TOPIC, payload=f"{CLIENT_ID} disconnected", qos=1, retain=True)
 
 heartbeat_timer = None
 message_count = 0
@@ -56,14 +58,14 @@ def get_date_folder():
 def send_heartbeat():
     global heartbeat_timer
     try:
-        client.publish(HEARTBEAT_TOPIC, payload="alive", qos=0, retain=False)
-        logging.info("Heartbeat sent.")
+        client.publish(f"{HEARTBEAT_TOPIC}/{CLIENT_ID}", payload=CLIENT_ID, qos=0, retain=False)
+        logging.info("Broker Heartbeat sent.")
 
     except Exception as e:
         logging.error(f"Heartbeat failed: {e}")
 
     finally:
-        heartbeat_timer = threading.Timer(60.0, send_heartbeat) # every 60s
+        heartbeat_timer = threading.Timer(30.0, send_heartbeat) # every 60s
         heartbeat_timer.start()
 
 def cancel_heartbeat():
@@ -81,15 +83,42 @@ def get_cam_log_path(camera_id):
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
+        
+        # Images
         logging.info(f"Connected to MQTT broker with result code: {rc}")
-        client.subscribe(MQTT_TOPIC, qos=1)
-        logging.info(f"Subscribed to topic: {MQTT_TOPIC}")
+        client.subscribe(CAMERA_TOPIC, qos=1)
+        logging.info(f"Subscribed to topic: {CAMERA_TOPIC}")
+        
+        # Heartbeat
+        client.subscribe(f"{HEARTBEAT_TOPIC}/+", qos=0)
+        logging.info(f"Subscribed to topic: {HEARTBEAT_TOPIC}/+")
+
+        # Last Will
+        client.subscribe(LWT_TOPIC, qos=1)
+        logging.info(f"Subscribed to topic: {LWT_TOPIC}")
+
         send_heartbeat() # Start heartbeat after connection
     else:
         logging.error(f"Failed to connect to MQTT Broker, result code: {rc}")
                     
 def on_message(client, userdata, msg):
     global message_count
+
+    payload_str = msg.payload.decode("utf-8", errors="ignore")
+    
+    # Handle System Status
+    if msg.topic.startswith("system/status/"):
+        logging.warning(f"LWT: {msg.topic} -> {payload_str}")
+        return
+
+    # Handle Heartbeat
+    if msg.topic.startswith("system/heartbeat/"):
+        sender_id = msg.topic.split("/")[-1] # Get camera ID from Topic
+        logging.info(f"Heartbeat Sender_id received is {sender_id}")
+        if sender_id == CLIENT_ID:
+            return # Ignore own heartbeat
+        return
+    
     try:
         image_data = msg.payload # raw binary
 
@@ -101,7 +130,7 @@ def on_message(client, userdata, msg):
         topic_parts = msg.topic.split("/")
         camera_id = topic_parts[1] if len(topic_parts) >= 2 else "unknown_cam"
 
-        #Create folder for today
+        # Create folder for today
         date_folder = get_date_folder()
         save_path = os.path.join(SAVE_DIR, date_folder, camera_id)
         os.makedirs(save_path, exist_ok=True)
@@ -151,8 +180,8 @@ def on_disconnect(client, userdata, rc):
             rc = client.reconnect()
             if rc == 0:
                 logging.info("Reconnected to broker successfully.")
-                client.subscribe(MQTT_TOPIC, qos=1)
-                logging.info(f"Resubscribed to topic: {MQTT_TOPIC}")
+                client.subscribe(CAMERA_TOPIC, qos=1)
+                logging.info(f"Resubscribed to topic: {CAMERA_TOPIC}")
                 send_heartbeat()
         except Exception as e:
             logging.error(f"Reconnect failed: {e}")
@@ -166,7 +195,7 @@ client.on_disconnect = on_disconnect
 
 try:
     client.connect(MQTT_BROKER, MQTT_PORT, keepalive=60)
-    logging.info(f"Listening for MQTT messages on {MQTT_TOPIC}")
+    logging.info(f"Listening for MQTT messages on {CAMERA_TOPIC}")
 
     try:
         client.loop_forever()

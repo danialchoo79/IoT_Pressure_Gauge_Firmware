@@ -32,7 +32,7 @@ void HandleSerialCommand(String cmd)
         Serial.println("Turning On LED Ring...");
         vTaskDelay(500/portTICK_PERIOD_MS);
 
-        TurnONAllColorLED();
+        TurnONAllWhiteLED();
         vTaskDelay(500/portTICK_PERIOD_MS);
 
         ImageCaptureHTTP();

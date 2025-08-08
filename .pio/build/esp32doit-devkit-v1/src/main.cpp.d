@@ -262,4 +262,5 @@
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Packets/Out/Subscribe.hpp \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Packets/Out/Unsubscribe.hpp \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Packets/Out/Publish.hpp \
- .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/M5PoECam.h
+ .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/M5PoECam.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src/Ticker.h

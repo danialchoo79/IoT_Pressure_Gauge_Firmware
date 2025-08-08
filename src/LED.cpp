@@ -19,7 +19,7 @@ void TurnONAllColorLED1By1()
     }
 }
 
-void TurnONAllColorLED()
+void TurnONAllWhiteLED()
 {
     // Light up All LEDs using Color Set By RGB Values
     for(int i=0; i < NUM_LEDS; i++) {
