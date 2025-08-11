@@ -1,36 +1,23 @@
 .pio/build/esp32doit-devkit-v1/src/main.cpp.o: src/main.cpp \
- src/HTTPCamNonBlocking.h \
- .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/M5PoECAM.h \
- .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/./utility/Camera_Class.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/driver/include/esp_camera.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFi.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/pgmspace.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPAddress.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPv6Address.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiType.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_wifi/include/esp_wifi_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_err.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_compiler.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/ledc.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_intr_alloc.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/soc.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_assert.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_bit_defs.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/ledc_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/soc_caps.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/gpio.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_attr.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/include/soc/gpio_periph.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/io_mux_reg.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_struct.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_reg.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_sig_map.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/gpio_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_rom/include/esp32/rom/gpio.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/periph_ctrl.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/periph_defs.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/driver/include/sensor.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include/sys/time.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/conversions/include/img_converters.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/conversions/include/esp_jpg_decode.h \
- .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/./utility/Button_Class.hpp \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_interface.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event_base.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiSTA.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiGeneric.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/FreeRTOS.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos/FreeRTOSConfig.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_compiler.h \
@@ -63,11 +50,16 @@
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/cpu.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_cpu.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/cpu_hal.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/soc_caps.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/cpu_types.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/esp32/include/hal/cpu_ll.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_attr.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/xtensa/esp32/include/xtensa/config/extreg.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_bit_defs.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/compare_set.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/include/soc/soc_memory_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/soc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_assert.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_system/include/esp_private/crosscore_int.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_timer/include/esp_timer.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include/esp_newlib.h \
@@ -86,77 +78,10 @@
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/task.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/list.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos/task_snapshot.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/semphr.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/queue.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/task.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_sleep.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/touch_sensor_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/semphr.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/queue.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/event_groups.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/timers.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-log.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/log/include/esp_log.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/log/include/esp_log_internal.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-matrix.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/uart_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-gpio.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/variants/esp32/pins_arduino.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-dac.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-adc.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-ledc.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rmt.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-sigmadelta.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-timer.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-bt.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-psram.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rgb-led.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-cpu.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp8266-compat.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/stdlib_noniso.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/binary.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WCharacter.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/pgmspace.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPAddress.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Client.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Server.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Udp.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPAddress.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/HardwareSerial.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/HWCDC.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/USBCDC.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Esp.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_partition.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_flash.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/spi_flash_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/esp_flash_err.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash_counters.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/Wifi.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPv6Address.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiType.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_wifi/include/esp_wifi_types.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_wifi/include/esp_private/esp_wifi_types_private.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_interface.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event_base.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiSTA.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiGeneric.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event_base.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_event/include/esp_event_legacy.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_netif/include/esp_netif.h \
@@ -182,6 +107,7 @@
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/lwip/src/include/lwip/debug.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/lwip/src/include/lwip/arch.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/port/esp32/include/arch/cc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include/errno.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/port/esp32/include/arch/sys_arch.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/port/esp32/include/arch/vfs_lwip.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/lwip/src/include/lwip/def.h \
@@ -200,41 +126,78 @@
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiAP.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiScan.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiClient.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_sleep.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/touch_sensor_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/gpio_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/include/soc/gpio_periph.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/io_mux_reg.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_struct.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_reg.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/gpio_sig_map.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/event_groups.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/freertos/timers.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-log.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/log/include/esp_log.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/log/include/esp_log_internal.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-matrix.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/uart_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-gpio.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/variants/esp32/pins_arduino.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-dac.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/gpio.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/esp_intr_alloc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_common/include/esp_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_rom/include/esp32/rom/gpio.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-adc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-ledc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rmt.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-sigmadelta.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-timer.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-bt.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-psram.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rgb-led.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-cpu.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp8266-compat.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/stdlib_noniso.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/binary.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/WCharacter.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPAddress.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Client.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Server.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Udp.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/HardwareSerial.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/HWCDC.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/USBCDC.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Esp.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_partition.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_flash.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/spi_flash_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/esp_flash_err.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash_counters.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Client.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiServer.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Server.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiUdp.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/Udp.h \
  C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.h \
- .pio/libdeps/esp32doit-devkit-v1/AsyncTCP-esphome/src/AsyncTCP.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/lwip/src/include/lwip/pbuf.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/ESPAsyncWebServer.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/FS/src/FS.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/StringArray.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFi.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/WebResponseImpl.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/WebHandlerImpl.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/AsyncWebSocket.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/AsyncWebSynchronization.h \
- .pio/libdeps/esp32doit-devkit-v1/ESPAsyncWebServer-esphome/src/AsyncEventSource.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src/WebServer.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src/HTTP_Method.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/nghttp/port/include/http_parser.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src/Uri.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src/detail/RequestHandler.h \
- src/HTTPCamBlocking.h src/LED.h \
- .pio/libdeps/esp32doit-devkit-v1/Adafruit\ NeoPixel/Adafruit_NeoPixel.h \
- src/Serial.h src/MQTTBase64.h \
- .pio/libdeps/esp32doit-devkit-v1/PubSubClient/src/PubSubClient.h \
- .pio/libdeps/esp32doit-devkit-v1/ArduinoJson/src/ArduinoJson.h \
- .pio/libdeps/esp32doit-devkit-v1/ArduinoJson/src/ArduinoJson.hpp \
- .pio/libdeps/esp32doit-devkit-v1/ArduinoJson/src/ArduinoJson/Configuration.hpp \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/cores/esp32/base64.h \
- src/PingMQTTBroker.h \
- .pio/libdeps/esp32doit-devkit-v1/ESP32Ping/ESP32Ping.h \
- .pio/libdeps/esp32doit-devkit-v1/ESP32Ping/ping.h \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient.h \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient.hpp \
+ .pio/libdeps/esp32doit-devkit-v1/AsyncTCP-esphome/src/AsyncTCP.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/lwip/lwip/src/include/lwip/pbuf.h \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Flags.hpp \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/ParsingInformation.hpp \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/MessageProperties.hpp \
@@ -263,4 +226,16 @@
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Packets/Out/Unsubscribe.hpp \
  .pio/libdeps/esp32doit-devkit-v1/AsyncMqttClient/src/AsyncMqttClient/Packets/Out/Publish.hpp \
  .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/M5PoECam.h \
- C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src/Ticker.h
+ .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/./utility/Camera_Class.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/driver/include/esp_camera.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/ledc.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/ledc_types.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/driver/include/driver/periph_ctrl.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/soc/esp32/include/soc/periph_defs.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/driver/include/sensor.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/conversions/include/img_converters.h \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp32-camera/conversions/include/esp_jpg_decode.h \
+ .pio/libdeps/esp32doit-devkit-v1/M5PoECAM/src/./utility/Button_Class.hpp \
+ C:/Users/D121A4527/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src/Ticker.h \
+ src/LED.h \
+ .pio/libdeps/esp32doit-devkit-v1/Adafruit\ NeoPixel/Adafruit_NeoPixel.h
